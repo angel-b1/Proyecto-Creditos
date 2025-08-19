@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Créditos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Gestión de Créditos</h1>
+
+    <form id="formCredito">
+        <input type="text" id="cliente" placeholder="Cliente" required>
+        <input type="number" id="monto" placeholder="Monto" step="0.01" required>
+        <input type="number" id="tasa_interes" placeholder="Tasa de interés" step="0.01" required>
+        <input type="number" id="plazo" placeholder="Plazo (meses)" required>
+        <input type="date" id="fecha_otorgamiento" required>
+        <button type="submit">Registrar Crédito</button>
+    </form>
+
+    <table id="tablaCreditos">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Cliente</th>
+                <th>Monto</th>
+                <th>Tasa Interés</th>
+                <th>Plazo</th>
+                <th>Fecha</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Se llenará con JS -->
+        </tbody>
+    </table>
+
+    <canvas id="graficaCreditos" width="400" height="200"></canvas>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
