@@ -3,20 +3,20 @@ import sqlite3
 
 app = Flask(__name__)
 
-# Conexión a SQLite
+#Conexión a SQLite
 def get_db():
     conn = sqlite3.connect("creditos.db")
     conn.row_factory = sqlite3.Row
     return conn
 
-# Ruta principal
+#Ruta principal
 @app.route("/")
 def index():
     return render_template("index.html")
 
-# --- CRUD ---
+# CRUD->
 
-# Obtener todos los créditos
+#Obtener todos los créditos
 @app.route("/api/creditos", methods=["GET"])
 def obtener_creditos():
     conn = get_db()
@@ -25,7 +25,7 @@ def obtener_creditos():
     conn.close()
     return jsonify(creditos)
 
-# Registrar un nuevo crédito
+#Registrar un nuevo credito
 @app.route("/api/creditos", methods=["POST"])
 def registrar_credito():
     data = request.json
@@ -38,7 +38,7 @@ def registrar_credito():
     conn.close()
     return jsonify({"message": "Crédito registrado", "id": cursor.lastrowid})
 
-# Editar un crédito existente
+#Editar un crédito existente
 @app.route("/api/creditos/<int:id>", methods=["PUT"])
 def editar_credito(id):
     data = request.json
@@ -51,7 +51,7 @@ def editar_credito(id):
     conn.close()
     return jsonify({"message": "Crédito actualizado"})
 
-# Eliminar un crédito
+#Eliminar un crédito
 @app.route("/api/creditos/<int:id>", methods=["DELETE"])
 def eliminar_credito(id):
     conn = get_db()

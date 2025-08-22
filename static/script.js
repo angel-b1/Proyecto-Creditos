@@ -1,5 +1,5 @@
 const form = document.getElementById("formCredito");
-const tabla = document.getElementById("tablaCreditos").getElementsByTagName("tbody")[0];
+const tabla = document.getElementById("tabla_Creditos").getElementsByTagName("tbody")[0];
 let chart;
 
 async function obtenerCreditos() {
@@ -55,7 +55,7 @@ async function eliminarCredito(id) {
 }
 
 function actualizarGrafica(total) {
-    const ctx = document.getElementById('graficaCreditos').getContext('2d');
+    const ctx = document.getElementById('grafica_Creditos').getContext('2d');
     if (chart) chart.destroy();
     chart = new Chart(ctx, {
         type: 'bar',
