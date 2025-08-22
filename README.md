@@ -94,4 +94,5 @@ Los créditos se muestran en la tabla y se actualiza la gráfica automáticament
 -----NOTAS:----
 Me costo un poco de trabajo realizarlo ya que algunas cosas son nuevas para mi, actualmente me meti algunos cursos pero sigo aprendiendo.
 
-![Funcionamiento Final](Funcionamiento.png)
+![Funcionamiento Final](Capturas/Funcionamiento.png)
+
