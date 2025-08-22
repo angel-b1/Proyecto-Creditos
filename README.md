@@ -61,7 +61,7 @@ python main.py
 http://127.0.0.1:5000/
 
 
-Explicación del Código:
+---Explicación del Código:---
 
 creditos.py: Archivo principal que inicia la aplicación Flask y configura las rutas.
 
@@ -90,3 +90,8 @@ El usuario agrega un crédito desde el formulario -> datos enviados al backend (
 Flask guarda los datos en la base de datos SQLite
 
 Los créditos se muestran en la tabla y se actualiza la gráfica automáticamente
+
+-----NOTAS:----
+Me costo un poco de trabajo realizarlo ya que algunas cosas son nuevas para mi, actualmente me meti algunos cursos pero sigo aprendiendo.
+
+![Funcionamiento Final](funcionamiento.png)
