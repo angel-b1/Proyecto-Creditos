@@ -96,3 +96,7 @@ Me costo un poco de trabajo realizarlo ya que algunas cosas son nuevas para mi, 
 
 ![Funcionamiento Final](Capturas/Funcionamiento.png)
 
+
+## Diagrama de Flujo
+
+![Diagrama de flujo](DiagramaFl/creditosdf.png)
